@@ -1,3 +1,42 @@
-h1 {
-  text-decoration: underline;
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: #414968;
+  background: orange;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+main {
+  width: 100%;
+  background: white;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+footer {
+  width: 100%;
+  background: blue;
+}
+
+.sidenav {
+  width: 50px;
+  background: green;
 }

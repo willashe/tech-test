@@ -7,7 +7,8 @@
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix build origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,13 @@
   "bugs": {
     "url": "https://github.com/willashe/tech-test/issues"
   },
-  "homepage": "https://github.com/willashe/tech-test#readme",
+  "homepage": "https://willashe.github.io/tech-test",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.12.13",
+    "@types/react-router-dom": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "babel-loader": "^8.2.2",
@@ -32,6 +34,7 @@
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^5.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.6",
@@ -47,6 +50,7 @@
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }
