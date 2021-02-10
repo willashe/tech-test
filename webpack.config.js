@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/index.tsx',
@@ -27,6 +28,10 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
+      favicon: path.resolve(__dirname, 'public', 'favicon.ico'),
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'static', to: '' }],
     }),
   ],
   resolve: {
