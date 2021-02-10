@@ -2,7 +2,7 @@ import React from 'react';
 
 const Food = () => (
   <>
-    <h1>I Love Food</h1>
+    <h1>Food</h1>
 
     <p>
       Lorem ipsum dolor sit amet, <i>consectetur</i> adipiscing elit, sed do

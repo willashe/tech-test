@@ -28,7 +28,7 @@ const SideNav = () => {
           </li>
 
           <li>
-            <NavLink to="/food" icon={faUtensils} label="I Love Food" />
+            <NavLink to="/food" icon={faUtensils} label="Food" />
           </li>
 
           <li>
