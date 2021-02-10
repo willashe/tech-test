@@ -18,7 +18,9 @@
               return s.replace(/~and~/g, '&');
             })
             .join('?');
-          console.log(decoded);
+          console.log(l.pathname);
+          console.log(l.search);
+          console.log(l.hash);
           console.log(l.pathname.slice(0, -1) + decoded + l.hash);
           window.history.replaceState(
             null,
