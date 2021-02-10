@@ -20,7 +20,7 @@ const SideNav = () => {
   };
 
   return (
-    <div className={`sidenav${collapsed ? ' collapsed' : ''}`}>
+    <aside className={`sidenav${collapsed ? ' collapsed' : ''}`}>
       <nav>
         <ul>
           <li>
@@ -49,9 +49,9 @@ const SideNav = () => {
         <FontAwesomeIcon
           icon={collapsed ? faChevronCircleRight : faChevronCircleLeft}
         />
-        {!collapsed && 'Collapse'}
+        {!collapsed && ' Collapse'}
       </button>
-    </div>
+    </aside>
   );
 };
 

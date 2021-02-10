@@ -13,32 +13,36 @@ import Footer from './components/Footer';
 const App = () => (
   <div className="app">
     <Header />
-    <div className="container">
+
+    <div className="main-wrapper">
       <Router>
         <>
           <SideNav />
           <main>
-            <Switch>
-              <Route exact path="/food">
-                <Food />
-              </Route>
-              <Route exact path="/coffee">
-                <Coffee />
-              </Route>
-              <Route path="/fitness">
-                <Fitness />
-              </Route>
-              <Route path="/guitar">
-                <Guitar />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
+            <div className="main-content">
+              <Switch>
+                <Route exact path="/food">
+                  <Food />
+                </Route>
+                <Route exact path="/coffee">
+                  <Coffee />
+                </Route>
+                <Route path="/fitness">
+                  <Fitness />
+                </Route>
+                <Route path="/guitar">
+                  <Guitar />
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+            </div>
           </main>
         </>
       </Router>
     </div>
+
     <Footer />
   </div>
 );
