@@ -15,7 +15,7 @@ const App = () => (
     <Header />
 
     <div className="main-wrapper">
-      <Router>
+      <Router basename="/tech-test">
         <>
           <SideNav />
           <main>

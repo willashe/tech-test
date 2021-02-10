@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const config = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -32,4 +32,12 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'production') {
+    config.output.publicPath = './';
+  }
+
+  return config;
 };

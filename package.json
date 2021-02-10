@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/willashe/tech-test/issues"
   },
-  "homepage": "https://willashe.github.io/tech-test",
+  "homepage": "https://willashe.com/tech-test",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
