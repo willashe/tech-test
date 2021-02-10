@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Coffee = () => (
+const Art = () => (
   <>
-    <h1>Coffee</h1>
+    <h1>Art</h1>
 
     <p>
       Nunc lobortis mattis aliquam faucibus purus. Vitae nunc sed velit
@@ -102,4 +102,4 @@ const Coffee = () => (
   </>
 );
 
-export default Coffee;
+export default Art;

@@ -5,9 +5,9 @@ import Header from './components/Header';
 import SideNav from './components/SideNav/';
 import Home from './components/pages/Home';
 import Food from './components/pages/Food';
-import Coffee from './components/pages/Coffee';
+import Art from './components/pages/Art';
 import Fitness from './components/pages/Fitness';
-import Guitar from './components/pages/Guitar';
+import Music from './components/pages/Music';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -24,14 +24,14 @@ const App = () => (
                 <Route exact path="/food">
                   <Food />
                 </Route>
-                <Route exact path="/coffee">
-                  <Coffee />
+                <Route exact path="/art">
+                  <Art />
                 </Route>
                 <Route path="/fitness">
                   <Fitness />
                 </Route>
-                <Route path="/guitar">
-                  <Guitar />
+                <Route path="/music">
+                  <Music />
                 </Route>
                 <Route path="/">
                   <Home />

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Guitar = () => (
+const Music = () => (
   <>
-    <h1>Guitar</h1>
+    <h1>Music</h1>
 
     <p>
       In egestas erat imperdiet sed. Egestas maecenas pharetra convallis posuere
@@ -72,4 +72,4 @@ const Guitar = () => (
   </>
 );
 
-export default Guitar;
+export default Music;

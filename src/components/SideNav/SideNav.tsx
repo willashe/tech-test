@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
   faUtensils,
-  faCoffee,
+  faPalette,
   faDumbbell,
-  faGuitar,
+  faMusic,
   faChevronCircleLeft,
   faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +32,7 @@ const SideNav = () => {
           </li>
 
           <li>
-            <NavLink to="/coffee" icon={faCoffee} label="Coffee" />
+            <NavLink to="/art" icon={faPalette} label="Art" />
           </li>
 
           <li>
@@ -40,7 +40,7 @@ const SideNav = () => {
           </li>
 
           <li>
-            <NavLink to="/guitar" icon={faGuitar} label="Guitar" />
+            <NavLink to="/music" icon={faMusic} label="Music" />
           </li>
         </ul>
       </nav>
