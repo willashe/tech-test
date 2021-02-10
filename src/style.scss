@@ -57,6 +57,13 @@ header {
 
     li {
       padding: 0.5rem 1rem;
+
+      a {
+        overflow: hidden;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -66,10 +73,6 @@ header {
 
   &.collapsed {
     width: 52px;
-
-    span.label {
-      display: none;
-    }
   }
 }
 

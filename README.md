@@ -12,7 +12,7 @@ Live demo: [https://willashe.com/tech-test/](https://willashe.com/tech-test/)
    ```bash
    npm start
    ```
-1. Local dev app should open in your default browser: [http://localhost:8080/](http://localhost:8080/)
+1. Local dev app should open in your default browser: [http://localhost:8080/tech-test/](http://localhost:8080/tech-test/)
 
 ## Test Requirements
 
