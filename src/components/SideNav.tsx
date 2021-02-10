@@ -22,14 +22,14 @@ const SideNav = () => {
           <li>
             <Link to="/">
               <FontAwesomeIcon icon={faCoffee} />
-              <span className="label">Page 1</span>
+              <span className="label">Coffee</span>
             </Link>
           </li>
 
           <li>
             <Link to="/page2">
               <FontAwesomeIcon icon={faGuitar} />
-              <span className="label">Page 2</span>
+              <span className="label">Guitars</span>
             </Link>
           </li>
         </ul>
