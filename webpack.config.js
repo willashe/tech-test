@@ -11,6 +11,7 @@ const config = {
   devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
+    openPage: 'tech-test/',
   },
   module: {
     rules: [
