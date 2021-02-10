@@ -1,9 +1,19 @@
 *,
 html,
 body {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  background: #f7f5fb;
+  font-family: 'Lora', serif;
 }
 
 .app {
@@ -14,8 +24,10 @@ body {
 
 header {
   width: 100%;
-  background: #414968;
-  background: orange;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .container {
@@ -25,13 +37,30 @@ header {
 }
 
 .sidenav {
+  position: relative;
   width: 200px;
-  background: green;
+  border-right: 1px solid #ccc;
+  padding-top: 0.5rem;
+  overflow-x: hidden;
   white-space: nowrap;
   transition: width 0.3s ease-out;
 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  span.label {
+    padding-left: 0.25rem;
+  }
+
   &.collapsed {
-    width: 50px;
+    width: 52px;
 
     span.label {
       display: none;
@@ -39,20 +68,29 @@ header {
   }
 }
 
-main {
+.sidenav-collapse-btn {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
   width: 100%;
-  background: white;
+  border: none;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  background: none;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1rem;
+  margin: 0 auto;
   overflow-y: scroll;
 }
 
 footer {
   width: 100%;
-  background: blue;
-}
-
-.sidenav-collapse-btn {
-  cursor: pointer;
-  background: none;
-  border: none;
-  width: 100%;
+  padding: 1rem;
+  color: white;
+  border-top: 1px solid #ccc;
 }

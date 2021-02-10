@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faHome,
+  faUtensils,
   faCoffee,
+  faDumbbell,
   faGuitar,
   faChevronCircleLeft,
   faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
+
+import NavLink from './NavLink';
 
 const SideNav = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -20,17 +24,23 @@ const SideNav = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faCoffee} />
-              <span className="label">Coffee</span>
-            </Link>
+            <NavLink to="/" icon={faHome} label="Home" />
           </li>
 
           <li>
-            <Link to="/page2">
-              <FontAwesomeIcon icon={faGuitar} />
-              <span className="label">Guitars</span>
-            </Link>
+            <NavLink to="/food" icon={faUtensils} label="I Love Food" />
+          </li>
+
+          <li>
+            <NavLink to="/coffee" icon={faCoffee} label="Coffee" />
+          </li>
+
+          <li>
+            <NavLink to="/fitness" icon={faDumbbell} label="Fitness" />
+          </li>
+
+          <li>
+            <NavLink to="/guitar" icon={faGuitar} label="Guitar" />
           </li>
         </ul>
       </nav>
