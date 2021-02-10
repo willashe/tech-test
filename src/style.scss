@@ -24,10 +24,24 @@ header {
   overflow-y: hidden;
 }
 
+.sidenav {
+  width: 200px;
+  background: green;
+  white-space: nowrap;
+  transition: width 0.3s ease-out;
+
+  &.collapsed {
+    width: 50px;
+
+    span.label {
+      display: none;
+    }
+  }
+}
+
 main {
   width: 100%;
   background: white;
-  flex: 1;
   overflow-y: scroll;
 }
 
@@ -36,7 +50,9 @@ footer {
   background: blue;
 }
 
-.sidenav {
-  width: 50px;
-  background: green;
+.sidenav-collapse-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
 }
